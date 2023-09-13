@@ -11,79 +11,79 @@ public class OtomasyonPage extends BasePage {
     }
 
     //Giris Alert Menü
-    public OtomasyonPage izinOnayla() throws InterruptedException {
-        Thread.sleep(1000);
+    public OtomasyonPage izinOnayla()  {
+        waitSecons(5);
         click(izinlerOnayButton);
-        Thread.sleep(1000);
+        waitSecons(5);
         infoLog("Gizlilik  Bölümü Geçildi");
 
         return this;
     }
 
-    public OtomasyonPage reklamGec () throws InterruptedException {
-        Thread.sleep(1000);
+    public OtomasyonPage reklamGec ()  {
+        waitSecons(5);
         click(reklamKaldirma);
-        Thread.sleep(1000);
+        waitSecons(5);
         passLog("Reklam geçildi.");
         return this;
 
     }
-    public OtomasyonPage Kgiris () throws InterruptedException {
-        Thread.sleep(1000);
+    public OtomasyonPage Kgiris ()  {
+        waitSecons(5);
         click(kullaniciGirisTikla);
-        Thread.sleep(1000);
+        waitSecons(5);
         passLog("Kullanıcı Girişi İçin Tıklama Yapıldı");
         return this;
 
     }
-    public OtomasyonPage uyeGirsButton () throws InterruptedException {
-        Thread.sleep(1000);
+    public OtomasyonPage uyeGirsButton ()  {
+        waitSecons(5);
         click(girisYapTiklama);
-        Thread.sleep(1000);
+        waitSecons(5);
         passLog("Eposta ile giriş ");
         return this;
 
     }
 
 
-    public OtomasyonPage kullaniciAdi () throws InterruptedException {
-        Thread.sleep(1000);
+    public OtomasyonPage kullaniciAdi ()  {
+        waitSecons(5);
         sendKeys(epsotaTik,"Kullanıcı Adınızı Giriniz"); //Kullanıcı Adınızı Giriniz
-        Thread.sleep(1000);
+        waitSecons(5);
         passLog("Eposta girişi yapıldı");
         return this;
 
     }
-    public OtomasyonPage epostaGirisButton1 () throws InterruptedException {
-        Thread.sleep(1000);
+    public OtomasyonPage epostaGirisButton1 ()  {
+        waitSecons(5);
        click(epostaGirsButton);
-        Thread.sleep(1000);
+        waitSecons(5);
         passLog("Eposta giriş butuna tıklandı.");
         return this;
     }
 
-    public OtomasyonPage SifreGiris () throws InterruptedException {
-        Thread.sleep(1000);
+    public OtomasyonPage SifreGiris ()  {
+        waitSecons(5);
         sendKeys(SifreYazdirmaText,"Şifrenizi Buraya Giriniz"); //Şifre Girme Ekranı
-        Thread.sleep(1000);
+        waitSecons(5);
         passLog("Şifre Girilme ekranı");
         return this;
 
     }
-    public OtomasyonPage SifreGirisButton () throws InterruptedException {
-        Thread.sleep(1000);
+    public OtomasyonPage SifreGirisButton ()  {
+        waitSecons(5);
         click(sifreGonder);
-        Thread.sleep(1000);
+        waitSecons(5);
         passLog("Giriş yapıldı.");
 
         return this;
 
     }
-    public OtomasyonPage ProfileGec () throws InterruptedException {
+    public OtomasyonPage ProfileGec ()  {
 
-        Thread.sleep(1000);
+        waitSecons(5);
     click(hosgeldiniz);
-    Thread.sleep(1000);
+        waitSecons(5);
         infoLog("Profil Alanına geçildi.");
         return this;
     }

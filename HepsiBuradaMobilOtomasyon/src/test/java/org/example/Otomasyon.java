@@ -4,6 +4,7 @@ import base.BaseTest;
 import base.OtomasyonPage;
 import base.ProfilPage;
 import base.ProductSearchPage;
+
 import org.testng.annotations.*;
 import reports.ExtentTestReports;
 

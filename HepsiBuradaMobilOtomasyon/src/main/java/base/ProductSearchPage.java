@@ -15,15 +15,15 @@ public class ProductSearchPage extends BasePage {
 
 
     public ProductSearchPage urun_search() throws InterruptedException {
-        Thread.sleep(1000);
+        waitSecons(5);;
 
        click(searchBox);
         infoLog("Ürün Arama text tıklandı");
-       Thread.sleep(1000);
+        waitSecons(5);
         sendKeys(searchBox, "bot");
         passLog("Bot Araması yapıldı");
 
-        Thread.sleep(1000);
+        waitSecons(5);
 
         return this;
     }
@@ -76,22 +76,22 @@ public class ProductSearchPage extends BasePage {
 
 
     public ProductSearchPage Sepet () throws InterruptedException {
-        Thread.sleep(1000);
+        waitSecons(5);
         click(sepete_ekle);
         passLog("Sepete Eklendi");
-        Thread.sleep(1000);
+        waitSecons(5);
         click(sepete_git);
         passLog("Sepete Gidildi");
-        Thread.sleep(1000);
+        waitSecons(5);
         click(sepet_urun_sil);
         passLog("Sepet Ürünü Silindi");
-        Thread.sleep(1000);
+        waitSecons(5);
         click(urun_sil_onayla);
         passLog("Sepet Silme Onayladı");
-        Thread.sleep(1000);
+        waitSecons(5);
         click(kategori_git);
         infoLog("Ürün silindi Profile geri dönüldü.");
-        Thread.sleep(1000);
+        waitSecons(5);
         return this;
     }
 
